@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/details/details",
+    "pages/cart/cart",
+    "pages/payment/payment",
+    "pages/orders/orders",
+    "pages/orders-list/orders-list",
+    "pages/account/account"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "SnapBite",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff5a00",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "Home",
+        "iconPath": "assets/icons/tabbar/home.png",
+        "selectedIconPath": "assets/icons/tabbar/home_active.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "Cart",
+        "iconPath": "assets/icons/tabbar/cart.png",
+        "selectedIconPath": "assets/icons/tabbar/cart_active.png"
+      },
+      {
+        "pagePath": "pages/orders-list/orders-list",
+        "text": "Orders",
+        "iconPath": "assets/icons/tabbar/orders.png",
+        "selectedIconPath": "assets/icons/tabbar/orders_active.png"
+      },
+      {
+        "pagePath": "pages/account/account",
+        "text": "Account",
+        "iconPath": "assets/icons/tabbar/account.png",
+        "selectedIconPath": "assets/icons/tabbar/account_active.png"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

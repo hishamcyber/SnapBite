@@ -1,0 +1,16 @@
+<!--pages/account/account.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">Welcome Back!</text>
+    <button></button>
+    <text class="subtitle">Please login or create a new account to continue.</text>
+  </view>
+
+  <view class="buttons">
+    <button class="btn login-btn" bindtap="goToLogin">Login</button>
+    <button class="btn register-btn" bindtap="goToRegister">Register</button>
+  </view>
+</view>
+
+
+

@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="header">
+    <!-- button bindtap="goBack">Back</button -->
+    <text class="title">Payment</text>
+  </view>
+
+  <block wx:if="{{cart.length === 0}}">
+    <text class="empty-msg">Your cart is empty.</text>
+  </block>
+
+  <block wx:else>
+    <block wx:for="{{cart}}" wx:key="id">
+      <view class="payment-item">
+        <image src="{{item.image}}" class="payment-image" mode="aspectFill" />
+        <view class="payment-info">
+          <text class="item-name">{{item.name}} x {{item.quantity}}</text>
+          <text class="item-price">Price: ¥{{item.totalPriceFormatted}}</text>
+        </view>
+      </view>
+    </block>
+
+    <view class="payment-total">
+      <text>Total: ¥{{totalPrice}}</text>
+    </view>
+
+    <button class="pay-btn" bindtap="handlePayment">Pay</button>
+    <button class="view-orders-btn" bindtap="goToOrders">View Orders</button>
+  </block>
+</view>

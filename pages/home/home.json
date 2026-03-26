@@ -1,0 +1,9 @@
+{
+  "disableScroll": false,
+  "backgroundTextStyle": "dark",
+  "navigationBarTitleText": "SnapBite",
+  "navigationBarBackgroundColor": "#ffffff",
+  "backgroundColor": "#ffffff",
+  "usingComponents": {},
+  "bounce": "none"
+}

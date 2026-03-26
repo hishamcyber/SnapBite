@@ -1,0 +1,81 @@
+.container {
+  padding: 20rpx;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  font-family: 'PingFang SC', sans-serif;
+}
+
+.header {
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #ddd;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #333;
+}
+
+.empty-message {
+  text-align: center;
+  margin-top: 100rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+
+.order-item {
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+  border-bottom: 1rpx solid #eee;
+  padding-bottom: 10rpx;
+}
+
+.order-id {
+  font-weight: 600;
+  color: #555;
+  font-size: 28rpx;
+}
+
+.order-date {
+  font-size: 24rpx;
+  color: #888;
+}
+
+.order-product {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+  font-size: 26rpx;
+  color: #444;
+}
+
+.product-name {
+  max-width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-price {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+.order-total {
+  margin-top: 15rpx;
+  font-weight: 700;
+  font-size: 30rpx;
+  color: #222;
+  text-align: right;
+}

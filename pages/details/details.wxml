@@ -1,0 +1,27 @@
+<view class="container">
+
+  <!-- Product Image -->
+  <image src="{{product.image}}" class="product-image" mode="aspectFill" />
+
+  <!-- Product Name -->
+  <text class="product-name">{{product.name}}</text>
+
+  <!-- Product Price -->
+  <text class="product-price">¥{{product.price}}</text>
+
+  <!-- Product Category -->
+  <text class="product-category">Category: {{product.category}}</text>
+
+  <!-- Quantity Selector -->
+  <view class="quantity-control">
+    <button class="qty-btn" bindtap="decreaseQty">-</button>
+    <text class="qty-display">{{quantity}}</text>
+    <button class="qty-btn" bindtap="increaseQty">+</button>
+  </view>
+
+  <!-- Add to Cart Button -->
+  <button class="add-to-cart-btn" bindtap="addToCart">Add {{quantity}} to Cart - ¥{{totalPrice}}</button>
+
+  <!-- Go To Cart Button -->
+  <button class="go-to-cart-btn" bindtap="goToCart">Go to Cart</button>
+</view>

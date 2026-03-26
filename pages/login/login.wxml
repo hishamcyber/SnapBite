@@ -1,0 +1,21 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">Welcome Back</text>
+    <button></button>
+    <text class="subtitle">Please login to your account</text>
+  </view>
+
+  <view class="form">
+    <input class="input" placeholder="Email" type="text" bindinput="onEmailInput" />
+    <input class="input" placeholder="Password" password="true" bindinput="onPasswordInput" />
+    <button class="btn login-btn" bindtap="handleLogin">Login</button>
+  </view>
+
+  <view class="footer">
+    <text>Don't have an account? </text>
+    <text class="link" bindtap="goToRegister">Register here</text>
+  </view>
+</view>
+
+

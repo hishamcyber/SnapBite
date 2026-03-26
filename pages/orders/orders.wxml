@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="header">
+    <text class="title">Order Details</text>
+  </view>
+
+  <block wx:if="{{order}}">
+    <text class="order-date">Order Date: {{order.date}}</text>
+
+    <block wx:for="{{order.items}}" wx:key="id">
+      <view class="order-item">
+        <image src="{{item.image}}" class="order-image" mode="aspectFill" />
+        <view class="order-info">
+          <text>{{item.name}} x {{item.quantity}}</text>
+          <text>Price: ¥{{item.price * item.quantity}}</text>
+        </view>
+      </view>
+    </block>
+
+    <view class="order-total">
+      <text>Total Paid: ¥{{order.totalPrice}}</text>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="no-order">
+      <text>{{noOrderMessage}}</text>
+    </view>
+  </block>
+</view>

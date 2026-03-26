@@ -1,0 +1,20 @@
+<!--pages/register/register.wxml-->
+<view class="container">
+  <view class="header">
+    <text class="title">Create Account</text>
+    <button></button>
+    <text class="subtitle">Fill in the form to get started</text>
+  </view>
+
+  <view class="form">
+    <input class="input" placeholder="Email" type="text" bindinput="onEmailInput" />
+    <input class="input" placeholder="Password" password="true" bindinput="onPasswordInput" />
+    <input class="input" placeholder="Confirm Password" password="true" bindinput="onConfirmPasswordInput" />
+    <button class="btn register-btn" bindtap="handleRegister">Register</button>
+  </view>
+
+  <view class="footer">
+    <text>Already have an account? </text>
+    <text class="link" bindtap="goToLogin">Login here</text>
+  </view>
+</view>

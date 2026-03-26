@@ -1,0 +1,168 @@
+/* Container & Layout */
+.container {
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+/* Add to your existing wxss */
+.cancel-button {
+  height: 40rpx;
+  padding: 0 10rpx;
+  margin-left: 10rpx;
+  background-color: #999;
+  color: #fff;
+  border: none;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  cursor: pointer;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 1px;
+}
+
+.search-results-count {
+  font-size: 28rpx;
+  color: #666;
+  margin: 20rpx 0;
+  text-align: center;
+}
+
+.no-results {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 32rpx;
+}
+
+/* Banner */
+.banner-swiper {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 16rpx;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  gap: 75rpx;               /* equal gap between items */
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+.category-item {
+  flex-shrink: 0;           /* prevent shrinking */
+  width: 120rpx;            /* fixed width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.category-icon {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 16rpx;     /* space below icon */
+}
+.category-text {
+  font-size: 26rpx;
+  color: #333;
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  color: #222;
+}
+
+.section-title-categories{
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  color: #222;
+}
+
+/* Featured Products - Horizontal Scroll */
+.product-list {
+  height: 180rpx;           /* reduce height */
+  white-space: nowrap;      /* keep in a row */
+  overflow-x: scroll;
+}
+.product-card-featured {
+  display: inline-block;    /* side by side */
+  width: 200rpx;            /* fixed width */
+  margin-right: 12rpx;
+  border-radius: 12rpx;
+  background-color: #fafafa;
+  padding: 10rpx;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+  scroll-snap-align: start;
+  vertical-align: top;
+}
+.product-image-featured {
+  width: 60%;           /* smaller width to leave space on sides */
+  height: 100rpx;       /* a bit shorter height */
+  border-radius: 10rpx;
+  margin: 0 auto 8rpx;  /* auto horizontal margin to center, 8rpx bottom space */
+  display: block;
+}
+
+
+/* Grid Products - 2 per row Vertical */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20rpx;
+  margin-top: 0;           /* ⬅️ reduce if too much space from title */
+
+}
+
+.product-card-grid {
+  width: 48%;
+  height: 250rpx;
+  margin-bottom: 20rpx;
+  border-radius: 12rpx;
+  background-color: #fafafa;
+  padding: 10rpx;
+  box-shadow: 0 2rpx 6rpx rgba(0,0,0,0.1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-image-grid {
+  width: 60%;                    /* ✅ zoomed out a bit, not too small */
+  height: 180rpx;                /* proportional height */
+  border-radius: 10rpx;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+
+/* Product Text */
+.product-name {
+  font-size: 26rpx;
+  color: #444;
+  margin: 0 0 8rpx 0;           /* increased spacing under the name */
+  line-height: 1.3;
+}
+
+.product-price {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ff5a00;
+  margin-left: 15rpx;
+}

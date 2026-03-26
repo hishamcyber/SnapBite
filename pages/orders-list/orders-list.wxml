@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="header">
+    <text class="title">My Orders</text>
+  </view>
+
+  <block wx:if="{{orders.length === 0}}">
+    <view class="empty-message">
+      <text>{{noOrdersMessage}}</text>
+    </view>
+  </block>
+
+  <block wx:else>
+    <block wx:for="{{orders}}" wx:key="id">
+      <view class="order-item">
+        <view class="order-header">
+          <text class="order-id">Order ID: {{item.id}}</text>
+          <text class="order-date">{{item.date}}</text>
+        </view>
+
+        <block wx:for="{{item.items}}" wx:key="id">
+          <view class="order-product">
+            <text class="product-name">{{item.name}} x {{item.quantity}}</text>
+            <text class="product-price">¥{{item.price}}</text>
+          </view>
+        </block>
+
+        <view class="order-total">
+          <text>Total Paid: ¥{{item.totalPrice}}</text>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>
