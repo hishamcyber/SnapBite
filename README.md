@@ -56,11 +56,15 @@ utils/
 
 Complete purchase workflow, including product browsing, cart management, and checkout.
 
+![Shopping Flow](./Preview/shopping-flow.gif)
+
 [Watch Video](./Preview/recording_20260718_17-23-49.mp4)
 
 #### Category Filtering
 
 Demonstrates dynamic filtering between Meals, Snacks, Healthy, and Drinks categories.
+
+![Category Filtering](./Preview/category-filter.gif)
 
 [Watch Video](./Preview/recording_20260718_17-25-12.mp4)
 
